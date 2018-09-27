@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VeloStation</string>
+    <string name="hint_text">Address</string>
+    <string name="return_text">Back</string>
 </resources>
