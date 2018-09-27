@@ -1,4 +1,5 @@
-[
+{
+  "velostations": [
   {
     "id": 1,
     "objectid": 1,
@@ -2190,3 +2191,4 @@
     "shape": ""
   }
 ]
+}

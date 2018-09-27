@@ -9,8 +9,8 @@ public class Velostation {
     @PrimaryKey
     private int uid;
 
-    @ColumnInfo(name = "name")
-    private String name;
+    @ColumnInfo(name = "naam")
+    private String naam;
 
     @ColumnInfo(name = "lat")
     private double lat;
@@ -18,21 +18,12 @@ public class Velostation {
     @ColumnInfo(name = "lon")
     private double lon;
 
-
     public int getUid() {
         return uid;
     }
 
     public void setUid(int uid) {
         this.uid = uid;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getLat() {
@@ -49,5 +40,13 @@ public class Velostation {
 
     public void setLon(double lon) {
         this.lon = lon;
+    }
+
+    public String getNaam() {
+        return naam;
+    }
+
+    public void setNaam(String naam) {
+        this.naam = naam;
     }
 }
