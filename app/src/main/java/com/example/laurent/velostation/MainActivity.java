@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -55,10 +56,19 @@ public class MainActivity extends Activity {
                 R.layout.list_item,
                 new String[]{"naam", "lat", "lon"},
                 new int[]{R.id.naam, R.id.lat, R.id.lon});
+
+
         lv.setAdapter(adapter);
 
 //        db = Room.databaseBuilder(getApplicationContext(),
 //                AppDatabase.class, "database-name").build();
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                
+            }
+        });
 
         mapButTest = (Button) findViewById(R.id.butt);
         mapButTest.setOnClickListener(new View.OnClickListener() {
